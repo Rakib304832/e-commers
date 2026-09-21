@@ -1,4 +1,7 @@
 import React from 'react';
+import Link  from "next/link";
+import Image from "next/image";
+
 
 const Navber = () => {
     return (
@@ -11,20 +14,23 @@ const Navber = () => {
       </div>
       <ul
         tabIndex={-1}
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        
-        <li><a>Home</a></li>
-        <li><a>Listed Books 3</a></li>
-        <li><a>Pages in Read</a></li>
+        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1  mt-3 w-52 p-2 shadow ">
+          <Link href="" className="text-green-500 border border-green-500 rounded-lg px-5 py-2 font-semibold">Home</Link>
+        <Link href="" >Listed Books </Link>
+        <Link href="" >Pages in Read</Link>
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">daisyUI</a>
+    <div className='flex item-center'>
+        <Image src="/book.ico" alt="Book logo" width={32} height={32} />
+        <h2>Book vibe</h2>
+    </div>
+    
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1">
-       <li className="text-green-500 border border-green-500"><a>Home</a></li>
-        <li><a>Listed Books 3</a></li>
-        <li><a>Pages in Read</a></li>
+    <ul className="menu menu-horizontal px-1 gap-4 items-center">
+       <Link href="" className="text-green-500 border border-green-500 rounded-lg px-5 py-2 font-semibold">Home</Link>
+        <Link href="" >Listed Books 3</Link>
+        <Link href="" >Pages in Read</Link>
     </ul>
   </div>
   <div className="navbar-end gap-3">

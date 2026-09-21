@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navber from "./component/shared/Navber"
+import Banner from "./component/homepage/Banner"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,6 +27,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full flex flex-col">
         <Navber></Navber>
+        <Banner></Banner>
         {children}
         <h2 className="font-bold text-5xl bg-yellow-500 py-7 text-center">front</h2>
       </body>
