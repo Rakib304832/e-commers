@@ -16,7 +16,7 @@ export default function BooksPage() {
         </div>
       </div>
 
-      <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
+      <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
         {books.map((book) => (
           <Bookcard key={book.bookId} book={book} />
         ))}

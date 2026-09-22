@@ -33,9 +33,8 @@ const Bookcard = ({ book }: BookCardProps) => {
           <span>{book.totalPages} pages</span>
         </div>
 
-        <p className="line-clamp-3 text-sm leading-6 text-gray-600">{book.review}</p>
 
-        <Link href={`/books/${book.bookId}`} className="btn btn-success w-full text-white">
+        <Link href={`/books/${book.bookId}`} className="btn  w-full text-white bg-emerald-500 hover:bg-black">
           View Details
         </Link>
       </div>
