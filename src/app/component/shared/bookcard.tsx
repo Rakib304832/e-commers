@@ -6,7 +6,8 @@ type BookCardProps = {
   book: Book;
 };
 
-const Bookcard = ({ book }: BookCardProps) => {
+const Bookcard = ({ book, }: BookCardProps) => {
+ 
   return (
     <article className="group overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl">
       <div className="relative h-64 overflow-hidden bg-gray-100">
@@ -40,6 +41,7 @@ const Bookcard = ({ book }: BookCardProps) => {
       </div>
     </article>
   );
+
 };
 
 export default Bookcard;
